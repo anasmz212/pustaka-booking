@@ -55,9 +55,9 @@
 
         //Join
         public function joinKategoriBuku($where) {
-            $this->db->select('*');
+           // $this->db->select('*');
             $this->db->from('buku');
-            $this->db->join('kategori', 'kategori.id_kategori = buku.id_kategori');
+            $this->db->join('kategori', 'kategori.id = buku.id_kategori');
             $this->db->where($where);
             return $this->db->get();
         }

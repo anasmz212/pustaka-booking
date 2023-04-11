@@ -81,7 +81,7 @@ class Home extends CI_Controller {
             $data['judul'] = $fields->judul_buku;
             $data['pengarang'] = $fields->pengarang;
             $data['penerbit'] = $fields->penerbit;
-            $data['kategori'] = $fields->nama_kategori;
+            $data['kategori'] = $fields->kategori;
             $data['tahun'] = $fields->tahun_terbit;
             $data['isbn'] = $fields->isbn;
             $data['gambar'] = $fields->image;
